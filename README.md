@@ -1,4 +1,6 @@
-# Tools
+# Tools ![PyPI](https://img.shields.io/pypi/v/ghsTools)
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/ghsTools)
 
 🐍 A PyPi Package with common functions and classes used in GHS App Micro Services
 
