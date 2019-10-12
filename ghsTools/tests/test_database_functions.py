@@ -37,3 +37,13 @@ def test_set_monitoring_info():
     ref_data = ref.get()
     ref.set({})
     assert ref_data == instance
+    
+def test_game_of_field():
+    """Test for the game on field function
+    """
+    football_field_instance = ghsTools().game_on_field("football-field")
+    gym_instance = ghsTools().game_on_field("gym")
+    softball_field_instance = ghsTools().game_on_field("softball-field")
+    assert type(football_field_instance) == type(True)
+    assert type(gym_instance) == type(True)
+    assert type(softball_field_instance) == type(True)

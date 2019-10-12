@@ -48,3 +48,15 @@ class ghsTools():
         }
         ref.set(ref_set)
         return ref_set
+    
+    def game_on_field(self, field_name):
+        """Get a boolean based off if there is a game currently on a certain field
+        
+        Arguments:
+            field_name {string} -- name of the field
+        """
+        ref_data = db.reference("field-information/field-status/" + field_name).get()
+        if ref_data["away-team-name"] != "" and ref_data["sport"] != "":
+            return True
+        else:
+            return False
