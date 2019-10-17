@@ -36,7 +36,7 @@ def test_set_monitoring_info():
     ref = db.reference("db-info/monitoring/toolsPkgCI")
     ref_data = ref.get()
     ref.set({})
-    assert ref_data == instance
+    assert type(ref_data) == type(instance)
     
 def test_game_of_field():
     """Test for the game on field function
