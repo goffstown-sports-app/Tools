@@ -1,6 +1,6 @@
 # Tools ![PyPI](https://img.shields.io/pypi/v/ghsTools)
 
-![PyPI - Downloads](https://img.shields.io/pypi/dm/ghsTools)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/ghsTools) ![GitHub contributors](https://img.shields.io/github/contributors/goffstown-sports-app/Tools)
 
 🐍 A PyPi Package with common functions and classes used in GHS App Micro Services
 
