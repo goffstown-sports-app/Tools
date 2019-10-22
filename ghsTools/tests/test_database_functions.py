@@ -3,6 +3,7 @@ from firebase_admin import credentials
 from firebase_admin import db
 import pytest
 import sys
+from time import sleep
 
 sys.path.append("..")
 from main import ghsTools
@@ -35,6 +36,7 @@ def test_set_monitoring_info():
     instance = ghsTools().set_monitoring_info(False, 0, "toolsPkgCI")
     ref = db.reference("db-info/monitoring/toolsPkgCI")
     ref_data = ref.get()
+    sleep(3)
     ref.set({})
     assert type(ref_data) == type(instance)
     
